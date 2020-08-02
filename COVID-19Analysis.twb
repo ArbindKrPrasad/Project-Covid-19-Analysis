@@ -1,0 +1,1775 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0219.0753                               -->
+<workbook source-build='2020.1.0 (20201.20.0219.0753)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='raw_data' inline='true' name='federated.0drxglo1hhzz3t19lk4ml1ghhpty' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='raw_data' name='textscan.1je19zn1p8fp071g8bpfi1hsmk44'>
+            <connection class='textscan' directory='C:/Users/arbin/Downloads' filename='raw_data.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1je19zn1p8fp071g8bpfi1hsmk44' name='raw_data.csv' table='[raw_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Patient Number' ordinal='0' />
+            <column datatype='string' name='State Patient Number' ordinal='1' />
+            <column datatype='date' name='Date Announced' ordinal='2' />
+            <column datatype='string' name='Estimated Onset Date' ordinal='3' />
+            <column datatype='integer' name='Age Bracket' ordinal='4' />
+            <column datatype='string' name='Gender' ordinal='5' />
+            <column datatype='string' name='Detected City' ordinal='6' />
+            <column datatype='string' name='Detected District' ordinal='7' />
+            <column datatype='string' name='Detected State' ordinal='8' />
+            <column datatype='string' name='State code' ordinal='9' />
+            <column datatype='string' name='Current Status' ordinal='10' />
+            <column datatype='string' name='Notes' ordinal='11' />
+            <column datatype='string' name='Contracted from which Patient (Suspected)' ordinal='12' />
+            <column datatype='string' name='Nationality' ordinal='13' />
+            <column datatype='string' name='Type of transmission' ordinal='14' />
+            <column datatype='date' name='Status Change Date' ordinal='15' />
+            <column datatype='string' name='Source_1' ordinal='16' />
+            <column datatype='string' name='Source_2' ordinal='17' />
+            <column datatype='string' name='Source_3' ordinal='18' />
+            <column datatype='string' name='Backup Notes' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Patient Number]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Patient Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Patient Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State Patient Number]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>State Patient Number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Announced</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Announced]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Date Announced</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Onset Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Estimated Onset Date]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Estimated Onset Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age Bracket</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age Bracket]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Age Bracket</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Detected City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Detected City]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Detected City</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Detected District</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Detected District]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Detected District</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Detected State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Detected State]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Detected State</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State code]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>State code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Current Status]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Current Status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Notes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Notes]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Notes</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contracted from which Patient (Suspected)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contracted from which Patient (Suspected)]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Contracted from which Patient (Suspected)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nationality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nationality]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Nationality</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of transmission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of transmission]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Type of transmission</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status Change Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Status Change Date]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Status Change Date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source_1]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Source_1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source_2]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Source_2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source_3]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Source_3</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Backup Notes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Backup Notes]</local-name>
+            <parent-name>[raw_data.csv]</parent-name>
+            <remote-alias>Backup Notes</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Number of patient' datatype='integer' name='[Calculation_294422869087834112]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Patient Number])' />
+      </column>
+      <column datatype='string' name='[Detected City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Detected State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Patient Number]' role='dimension' type='ordinal' />
+      <column caption='Source 1' datatype='string' name='[Source_1]' role='dimension' type='nominal' />
+      <column caption='Source 2' datatype='string' name='[Source_2]' role='dimension' type='nominal' />
+      <column caption='Source 3' datatype='string' name='[Source_3]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State Patient Number]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State code]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Detected State]' derivation='None' name='[none:Detected State:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.756303' measure-ordering='alphabetic' measure-percentage='0.243697' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Detected State:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Delhi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Telangana&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Manipur&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Assam&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Puducherry&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Himachal Pradesh&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;West Bengal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Goa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tripura&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bihar&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Punjab&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Madhya Pradesh&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Andaman and Nicobar Islands&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Meghalaya&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kerala&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chandigarh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rajasthan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jammu and Kashmir&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jharkhand&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ladakh&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Maharashtra&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gujarat&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Uttar Pradesh&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Chhattisgarh&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tamil Nadu&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Andhra Pradesh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mizoram&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Karnataka&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Haryana&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Uttarakhand&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arunachal Pradesh&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Odisha&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='death_and_recovered' inline='true' name='federated.00cnp1k09xys0e19vzk7b06gzxb1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='death_and_recovered' name='textscan.069wi5011mt5fw1f8phmu14sxy0a'>
+            <connection class='textscan' directory='C:/Users/arbin/Downloads' filename='death_and_recovered.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.069wi5011mt5fw1f8phmu14sxy0a' name='death_and_recovered.csv' table='[death_and_recovered#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Sl_No' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='integer' name='Age Bracket' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='string' name='Patient_Status' ordinal='4' />
+            <column datatype='string' name='City' ordinal='5' />
+            <column datatype='string' name='District' ordinal='6' />
+            <column datatype='string' name='State' ordinal='7' />
+            <column datatype='string' name='Statecode' ordinal='8' />
+            <column datatype='string' name='Notes' ordinal='9' />
+            <column datatype='string' name='Nationality' ordinal='10' />
+            <column datatype='string' name='Source_1' ordinal='11' />
+            <column datatype='string' name='Source_2' ordinal='12' />
+            <column datatype='string' name='Source_3' ordinal='13' />
+            <column datatype='string' name='Patient_Number (Could be mapped later)' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sl_No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sl_No]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Sl_No</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age Bracket</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age Bracket]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Age Bracket</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Status]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Patient_Status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Statecode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Statecode]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Statecode</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Notes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Notes]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Notes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nationality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nationality]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Nationality</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source_1]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Source_1</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source_2]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Source_2</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source_3]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Source_3</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Number (Could be mapped later)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Number (Could be mapped later)]</local-name>
+            <parent-name>[death_and_recovered.csv]</parent-name>
+            <remote-alias>Patient_Number (Could be mapped later)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Patient Number (Could be mapped later)' datatype='string' name='[Patient_Number (Could be mapped later)]' role='dimension' type='nominal' />
+      <column caption='Patient Status' datatype='string' name='[Patient_Status]' role='dimension' type='nominal' />
+      <column caption='Sl No' datatype='integer' name='[Sl_No]' role='measure' type='quantitative' />
+      <column caption='Source 1' datatype='string' name='[Source_1]' role='dimension' type='nominal' />
+      <column caption='Source 2' datatype='string' name='[Source_2]' role='dimension' type='nominal' />
+      <column caption='Source 3' datatype='string' name='[Source_3]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Patient_Status]' derivation='None' name='[none:Patient_Status:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='State, City'>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.665266' measure-ordering='alphabetic' measure-percentage='0.334734' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Patient_Status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Recovered&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NotCountedbyAnyState\#&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Deceased&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number Of Patient Affected (State Wise) From COVID-19</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='raw_data' name='federated.0drxglo1hhzz3t19lk4ml1ghhpty' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0drxglo1hhzz3t19lk4ml1ghhpty'>
+            <column caption='Number of patient' datatype='integer' name='[Calculation_294422869087834112]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Patient Number])' />
+            </column>
+            <column datatype='string' name='[Detected State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Patient Number]' role='dimension' type='ordinal' />
+            <column-instance column='[Detected State]' derivation='None' name='[none:Detected State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_294422869087834112]' derivation='User' name='[usr:Calculation_294422869087834112:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Detected State:nk]'>
+            <groupfilter from='&quot;Andaman and Nicobar Islands&quot;' function='range' level='[none:Detected State:nk]' to='&quot;West Bengal&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Detected State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[usr:Calculation_294422869087834112:qk]' num-steps='4' palette='red_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Detected State:nk]' />
+              <color column='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[usr:Calculation_294422869087834112:qk]' />
+              <geometry column='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[Latitude (generated)]</rows>
+        <cols>[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4254BEC2-8B19-43D3-B468-D7EEE817A365}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Age Group Of Patient Affected</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='raw_data' name='federated.0drxglo1hhzz3t19lk4ml1ghhpty' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0drxglo1hhzz3t19lk4ml1ghhpty'>
+            <column datatype='integer' name='[Age Bracket]' role='measure' type='quantitative' />
+            <column caption='Number of patient' datatype='integer' name='[Calculation_294422869087834112]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Patient Number])' />
+            </column>
+            <column datatype='integer' name='[Patient Number]' role='dimension' type='ordinal' />
+            <column-instance column='[Age Bracket]' derivation='None' name='[none:Age Bracket:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_294422869087834112]' derivation='User' name='[usr:Calculation_294422869087834112:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[usr:Calculation_294422869087834112:qk]</rows>
+        <cols>[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Age Bracket:qk]</cols>
+      </table>
+      <simple-id uuid='{4C6342E5-95BE-4881-B2A2-E52B1EF3FC40}' />
+    </worksheet>
+    <worksheet name='Sheet 2 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='raw_data' name='federated.0drxglo1hhzz3t19lk4ml1ghhpty' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0drxglo1hhzz3t19lk4ml1ghhpty'>
+            <column datatype='integer' name='[Age Bracket]' role='measure' type='quantitative' />
+            <column caption='Number of patient' datatype='integer' name='[Calculation_294422869087834112]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Patient Number])' />
+            </column>
+            <column datatype='integer' name='[Patient Number]' role='dimension' type='ordinal' />
+            <column-instance column='[Age Bracket]' derivation='None' name='[none:Age Bracket:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_294422869087834112]' derivation='User' name='[usr:Calculation_294422869087834112:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[usr:Calculation_294422869087834112:qk]</rows>
+        <cols>[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Age Bracket:qk]</cols>
+      </table>
+      <simple-id uuid='{232A8D8F-8571-4618-8145-F62829291BFF}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='death_and_recovered' name='federated.00cnp1k09xys0e19vzk7b06gzxb1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00cnp1k09xys0e19vzk7b06gzxb1'>
+            <column caption='Patient Status' datatype='string' name='[Patient_Status]' role='dimension' type='nominal' />
+            <column caption='Sl No' datatype='integer' name='[Sl_No]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Sl_No]' derivation='Attribute' name='[attr:Sl_No:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Patient_Status]' derivation='None' name='[none:Patient_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]' value='241' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[attr:Sl_No:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:State:nk]</rows>
+        <cols>[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]</cols>
+      </table>
+      <simple-id uuid='{561FA982-0713-4A63-BF1B-B2B267D43369}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Recovery Vs Death Of Patient having OutCome</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='death_and_recovered' name='federated.00cnp1k09xys0e19vzk7b06gzxb1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00cnp1k09xys0e19vzk7b06gzxb1'>
+            <column datatype='integer' name='[Age Bracket]' role='measure' type='quantitative' />
+            <column caption='Patient Status' datatype='string' name='[Patient_Status]' role='dimension' type='nominal' />
+            <column caption='Sl No' datatype='integer' name='[Sl_No]' role='measure' type='quantitative' />
+            <column-instance column='[Age Bracket]' derivation='Avg' name='[avg:Age Bracket:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sl_No]' derivation='CountD' name='[ctd:Sl_No:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Patient_Status]' derivation='None' name='[none:Patient_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Patient_Status:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Patient_Status:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:Patient_Status:nk]' member='&quot;NotCountedbyAnyState\#&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[ctd:Sl_No:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[ctd:Sl_No:qk]' />
+              <lod column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[avg:Age Bracket:qk]' />
+              <text column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]' />
+              <color column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{56D51031-6EFE-4B8E-90E9-62B2BCEB44D6}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='death_and_recovered' name='federated.00cnp1k09xys0e19vzk7b06gzxb1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00cnp1k09xys0e19vzk7b06gzxb1'>
+            <column datatype='integer' name='[Age Bracket]' role='measure' type='quantitative' />
+            <column caption='Patient Status' datatype='string' name='[Patient_Status]' role='dimension' type='nominal' />
+            <column caption='Sl No' datatype='integer' name='[Sl_No]' role='measure' type='quantitative' />
+            <column-instance column='[Age Bracket]' derivation='Avg' name='[avg:Age Bracket:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sl_No]' derivation='CountD' name='[ctd:Sl_No:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Patient_Status]' derivation='None' name='[none:Patient_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Patient_Status:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Patient_Status:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:Patient_Status:nk]' member='&quot;NotCountedbyAnyState\#&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[ctd:Sl_No:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]</rows>
+        <cols>[federated.00cnp1k09xys0e19vzk7b06gzxb1].[avg:Age Bracket:qk]</cols>
+      </table>
+      <simple-id uuid='{6B1F443A-A6D9-4A3A-A10A-B0AB1DBE44C7}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='death_and_recovered' name='federated.00cnp1k09xys0e19vzk7b06gzxb1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00cnp1k09xys0e19vzk7b06gzxb1'>
+            <column datatype='integer' name='[Age Bracket]' role='measure' type='quantitative' />
+            <column-instance column='[Age Bracket]' derivation='Median' name='[med:Age Bracket:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.00cnp1k09xys0e19vzk7b06gzxb1].[med:Age Bracket:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{1E48AFCF-8B84-4EAC-A8EE-AEF309EA7A18}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='death_and_recovered' name='federated.00cnp1k09xys0e19vzk7b06gzxb1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00cnp1k09xys0e19vzk7b06gzxb1'>
+            <column datatype='integer' name='[Age Bracket]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[Age Bracket]' derivation='Count' name='[cnt:Age Bracket:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[cnt:Age Bracket:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:City:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7A5F3200-A1FB-46F4-BA0F-C849A14B16DA}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gender Ratio Of Patient Affected From COVID-19</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='raw_data' name='federated.0drxglo1hhzz3t19lk4ml1ghhpty' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0drxglo1hhzz3t19lk4ml1ghhpty'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Patient Number]' role='dimension' type='ordinal' />
+            <column-instance column='[Patient Number]' derivation='Count' name='[cnt:Patient Number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Gender:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Gender:nk]' />
+              <groupfilter function='member' level='[none:Gender:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[cnt:Patient Number:qk]' />
+              <text column='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Gender:nk]' />
+              <color column='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{70FB0385-8C35-4D96-AFD8-9C32B9F588D8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='18' param='horz' type='layout-flow' w='99000' x='500' y='889'>
+            <zone h='98222' id='15' param='vert' type='layout-flow' w='99000' x='500' y='889'>
+              <zone h='98222' id='13' param='vert' type='layout-flow' w='99000' x='500' y='889'>
+                <zone h='98222' id='11' param='horz' type='layout-flow' w='99000' x='500' y='889'>
+                  <zone h='98222' id='7' param='horz' type='layout-flow' w='99000' x='500' y='889'>
+                    <zone h='98222' id='5' type='layout-basic' w='99000' x='500' y='889'>
+                      <zone h='98222' id='3' name='Sheet 1' w='49500' x='500' y='889'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='49111' id='8' name='Sheet 2' w='49500' x='50000' y='889'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='49111' id='9' name='Sheet 4' w='24750' x='50000' y='50000'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='49111' id='16' name='Sheet 9' w='24750' x='74750' y='50000'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='21' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98222' id='3' is-fixed='true' name='Sheet 1' w='49500' x='500' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='8' is-fixed='true' name='Sheet 2' w='49500' x='50000' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='9' is-fixed='true' name='Sheet 4' w='24750' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='16' is-fixed='true' name='Sheet 9' w='24750' x='74750' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FD6C5A54-E352-44C4-8591-DE50448242E0}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[usr:Calculation_294422869087834112:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5BB9934A-C770-4B58-B6FA-47FD2588DF4E}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1930251F-D603-40C6-9465-8A19A7A96F33}' />
+    </window>
+    <window class='worksheet' name='Sheet 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37B4C466-7188-4933-9F8F-83AA1FDA011E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{54868839-D925-4F03-BEC7-4C1B0BF2B943}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00cnp1k09xys0e19vzk7b06gzxb1].[none:Patient_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{FE438A3A-1988-4E39-9DE4-E88C1930E934}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E9144B33-8D13-461A-AE2B-04CD7B41639F}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A94291A0-BB19-4092-BA21-B5EDD95EED42}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 9' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4D702F52-5786-4D7B-85C5-5654589332BD}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{213BEF76-07D1-4625-9C66-1E60E80E05EF}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0drxglo1hhzz3t19lk4ml1ghhpty].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D42DCF13-2906-48CA-AB00-3D2D9B631AC2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      A//dXQf9uXbwAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
